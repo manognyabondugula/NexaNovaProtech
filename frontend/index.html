@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Protech Trainer Management</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <h1>👨‍🏫 Protech Trainer Management</h1>
+  <div class="grid-container">
+
+    <!-- Add Trainer -->
+    <div class="card">
+      <h2>Add Trainer</h2>
+      <form id="addTrainerForm">
+        <input type="text" name="name" placeholder="Name" required />
+        <input type="email" name="email" placeholder="Email" required />
+        <input type="text" name="phone" placeholder="Phone" required />
+        <input type="text" name="specialization" placeholder="Specialization" required />
+        <button type="submit">Add Trainer</button>
+      </form>
+      <div class="feedback" id="addTrainerFeedback"></div>
+    </div>
+
+    <!-- Delete Trainer -->
+    <div class="card">
+      <h2>Delete Trainer</h2>
+      <form id="deleteTrainerForm">
+        <input type="number" name="id" placeholder="Trainer ID" required />
+        <button type="submit">Delete Trainer</button>
+      </form>
+      <div class="feedback" id="deleteTrainerFeedback"></div>
+    </div>
+
+    <!-- Get Trainers by Subject Name -->
+    <div class="card">
+      <h2>Get Trainers by Subject</h2>
+      <form id="getTrainerBySubjectForm">
+        <input type="text" name="subject" placeholder="Subject Name" required />
+        <button type="submit">Get Trainers</button>
+      </form>
+      <div class="feedback" id="subjectTrainerResults"></div>
+    </div>
+
+    <!-- Get Trainers by Subject ID -->
+    <div class="card">
+      <h2>Get Trainers by Subject ID</h2>
+      <form id="getTrainerBySubjectIdForm">
+        <input type="number" name="id" placeholder="Subject ID" required />
+        <button type="submit">Get Trainers</button>
+      </form>
+      <div class="feedback" id="subjectIdTrainerResults"></div>
+    </div>
+
+    <!-- Add Subject -->
+    <div class="card">
+      <h2>Add Subject</h2>
+      <form id="addSubjectForm">
+        <input type="text" name="subject_name" placeholder="Subject Name" required />
+        <button type="submit">Add Subject</button>
+      </form>
+      <div class="feedback" id="addSubjectFeedback"></div>
+    </div>
+
+    <!-- Display All Trainers -->
+    <div class="card wide">
+      <h2>All Trainers</h2>
+      <button id="loadAllTrainers">Load Trainers</button>
+      <div class="feedback" id="allTrainersList"></div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
